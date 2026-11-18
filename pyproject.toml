@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claude-session-console"
+version = "0.1.0"
+description = "Self-hosted web console for your Claude Code sessions: tmux-backed chat, full-text search over every transcript, auto-written wiki cards and an assistant session that knows where everything happened."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = []
+keywords = ["claude", "claude-code", "tmux", "console", "sessions"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: POSIX",
+  "Environment :: Web Environment",
+]
+
+[project.scripts]
+session-console = "session_console.cli:main"
+
+[tool.setuptools]
+packages = ["session_console"]
+
+[tool.setuptools.package-data]
+session_console = ["static/*", "assistant_template/*"]

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(session-console wiki:*)",
+      "Bash(session-console wiki *)"
+    ]
+  }
+}
