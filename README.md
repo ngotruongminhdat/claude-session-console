@@ -11,7 +11,7 @@ Web console tự host cho các session **Claude Code** trên máy bạn. Một f
 Cần: Linux hoặc macOS, Python ≥ 3.10, `tmux`, và Claude Code đã `claude login` trên máy chạy server.
 
 ```bash
-pipx install git+https://github.com/<you>/claude-session-console   # hoặc: pip install --user .
+pipx install git+https://github.com/ngotruongminhdat/claude-session-console   # hoặc: pip install --user .
 session-console                                  # http://127.0.0.1:8765/?token=…
 session-console run --host 0.0.0.0               # mở từ thiết bị khác (Tailscale / LAN)
 session-console install-service --host 0.0.0.0   # chạy nền, tự lên sau reboot (systemd user / launchd)

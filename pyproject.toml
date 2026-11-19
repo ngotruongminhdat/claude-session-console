@@ -26,3 +26,7 @@ packages = ["session_console"]
 
 [tool.setuptools.package-data]
 session_console = ["static/*", "assistant_template/*"]
+
+[project.urls]
+Homepage = "https://github.com/ngotruongminhdat/claude-session-console"
+Issues = "https://github.com/ngotruongminhdat/claude-session-console/issues"
